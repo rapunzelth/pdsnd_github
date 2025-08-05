@@ -71,7 +71,7 @@ def load_data(city, month, day):
     return df, df_city
 
 
-def time_stats(df_city, city):
+def time_stats(city, df_city ):
     """Displays statistics on the most frequent times of travel in specificed city."""
 
     print('\nCalculating The Most Frequent Times of Travel in '+ city.upper() +' (No time filter applied)...\n')
@@ -179,7 +179,7 @@ def main():
         if month == 'no' and day == 'no':
             break
         df, df_city = load_data(city, month, day)
-        time_stats(df_city,city)
+        time_stats(city, df_city)
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df, city)
