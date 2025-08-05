@@ -22,8 +22,3 @@ This Python script allows users to explore bikeshare data for three major US cit
 - Python 3.x
 - [pandas](https://pandas.pydata.org/)
 - [numpy](https://numpy.org/)
-
-Install them using:
-
-```bash
-pip install pandas numpy
