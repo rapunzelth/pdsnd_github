@@ -71,7 +71,7 @@ def load_data(city, month, day):
     return df, df_city
 
 
-def time_stats(df_city, city):
+def time_stats(city, df_city ):
     """Displays statistics on the most frequent times of travel in specificed city."""
 
     print('\nCalculating The Most Frequent Times of Travel in '+ city.upper() +' (No time filter applied)...\n')
