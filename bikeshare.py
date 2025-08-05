@@ -179,7 +179,7 @@ def main():
         if month == 'no' and day == 'no':
             break
         df, df_city = load_data(city, month, day)
-        time_stats(df_city,city)
+        time_stats(city, df_city)
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df, city)
